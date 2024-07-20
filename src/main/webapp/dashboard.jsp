@@ -13,7 +13,9 @@
     Connection conn;
     PreparedStatement pst;
     ResultSet rst;
-
+    %>
+    
+<% 
     try
     {
         Class.forName("com.mysql.cj.jdbc.Driver");
@@ -67,6 +69,8 @@
         <br>
         <h3><a href = "Check_List.jsp">Click Here </a>to view using your ID</h3>
         </center>
+        
+            
 
 <%
         }

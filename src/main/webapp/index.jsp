@@ -8,7 +8,7 @@
 <style>
   body{
     
-   background-color: #CCCCFF;
+   background-color: #3DBAC9;
     h2 {
         color: red;
     }
@@ -110,12 +110,58 @@
   color: green;
    }
 
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-</style>
+        .navbar {
+            display: flex;
+          
+            overflow: hidden;
+            background-color: lightblue;
+        }
+
+        .navbar a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: underline;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .navbar .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .navbar .menu {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+    </style>
+    <div class="navbar">
+        <a href="#home" class="logo">Sports <span style="color:Red;">Enrollment</span> List 2024</a>
+    <div class="menu">
+    <a href="index.jsp" target="_blank" >Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="admin.jsp "target="_blank">Administator Login</a>
+    </div>
+    </div>
+
+
 </head>
 <body>
 	<center>
-		<h1><u>Sports <span style="color:Red;">Enrollment</span> Form</u></h1>
+		<!--<h1><u>Sports <span style="color:Red;">Enrollment</span> Form</u></h1>-->
 		<hr>
 		<form action="register.jsp" method="post">
 			<table border="4">
